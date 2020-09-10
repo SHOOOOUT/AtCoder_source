@@ -4,6 +4,7 @@ package main
 import (
 	"bufio"
 	f "fmt"
+	"http"
 	"os"
 	"strconv"
 )
@@ -38,6 +39,8 @@ func main() {
 
 	num, submission := scanInt2()
 	f.Printf("%d %d\n", num, submission)
+
+	f.Println(http.StatusOK)
 
 	array := make(map[int]string)
 
